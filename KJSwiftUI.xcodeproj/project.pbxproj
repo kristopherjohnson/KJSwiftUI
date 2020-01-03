@@ -14,6 +14,7 @@
 		4EEDC48F23BF65B20040153F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EEDC48E23BF65B20040153F /* Preview Assets.xcassets */; };
 		4EEDC49223BF65B20040153F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EEDC49023BF65B20040153F /* LaunchScreen.storyboard */; };
 		4EEDC49D23BF65B20040153F /* KJSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDC49C23BF65B20040153F /* KJSwiftUIUITests.swift */; };
+		4EEDC4A823BF69330040153F /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDC4A723BF69330040153F /* ButtonsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		4EEDC49823BF65B20040153F /* KJSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KJSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EEDC49C23BF65B20040153F /* KJSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJSwiftUIUITests.swift; sourceTree = "<group>"; };
 		4EEDC49E23BF65B20040153F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EEDC4A723BF69330040153F /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,12 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				4EEDC48523BF65B00040153F /* AppDelegate.swift */,
-				4EEDC48723BF65B00040153F /* SceneDelegate.swift */,
-				4EEDC48923BF65B00040153F /* ContentView.swift */,
 				4EEDC48B23BF65B20040153F /* Assets.xcassets */,
-				4EEDC49023BF65B20040153F /* LaunchScreen.storyboard */,
+				4EEDC4A723BF69330040153F /* ButtonsView.swift */,
+				4EEDC48923BF65B00040153F /* ContentView.swift */,
 				4EEDC49323BF65B20040153F /* Info.plist */,
+				4EEDC49023BF65B20040153F /* LaunchScreen.storyboard */,
 				4EEDC48D23BF65B20040153F /* Preview Content */,
+				4EEDC48723BF65B00040153F /* SceneDelegate.swift */,
 			);
 			path = KJSwiftUI;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			files = (
 				4EEDC48623BF65B00040153F /* AppDelegate.swift in Sources */,
 				4EEDC48823BF65B00040153F /* SceneDelegate.swift in Sources */,
+				4EEDC4A823BF69330040153F /* ButtonsView.swift in Sources */,
 				4EEDC48A23BF65B00040153F /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

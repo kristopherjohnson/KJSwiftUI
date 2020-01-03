@@ -2,73 +2,91 @@
 //  ContentView.swift
 //  KJSwiftUI
 //
-//  Created by Kristopher Johnson on 1/3/20.
 //  Copyright © 2020 Kristopher Johnson. All rights reserved.
 //
 
 import SwiftUI
 
-private let dateFormatter: DateFormatter = {
-    let dateFormatter = DateFormatter()
-    dateFormatter.dateStyle = .medium
-    dateFormatter.timeStyle = .medium
-    return dateFormatter
-}()
-
 struct ContentView: View {
-    @State private var dates = [Date]()
-
     var body: some View {
         NavigationView {
-            MasterView(dates: $dates)
-                .navigationBarTitle(Text("Master"))
-                .navigationBarItems(
-                    leading: EditButton(),
-                    trailing: Button(
-                        action: {
-                            withAnimation { self.dates.insert(Date(), at: 0) }
-                        }
-                    ) {
-                        Image(systemName: "plus")
-                    }
-                )
-            DetailView()
-        }.navigationViewStyle(DoubleColumnNavigationViewStyle())
+            MasterView()
+                .navigationBarTitle(Text("KJSwiftUI"), displayMode: .inline)
+            HomeView()
+                .navigationBarTitle(Text("Home"))
+        }
+        //.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
+/// Main view for the application
 struct MasterView: View {
-    @Binding var dates: [Date]
-
     var body: some View {
         List {
-            ForEach(dates, id: \.self) { date in
-                NavigationLink(
-                    destination: DetailView(selectedDate: date)
-                ) {
-                    Text("\(date, formatter: dateFormatter)")
-                }
-            }.onDelete { indices in
-                indices.forEach { self.dates.remove(at: $0) }
+            Section(header: Text("Controls")) {
+                MasterRow(name: "Buttons",
+                          destination: ButtonsView()
+                            .navigationBarTitle(Text("Buttons"), displayMode: .inline))
+                MasterRow(name: "Pickers",
+                          destination: UnimplementedView(name: "Pickers"))
+                MasterRow(name: "Sliders",
+                          destination: UnimplementedView(name: "Sliders"))
+                MasterRow(name: "Text",
+                          destination: UnimplementedView(name: "Text"))
+                MasterRow(name: "TextFields",
+                          destination: UnimplementedView(name: "TextFields"))
             }
+
+            Section(header: Text("Layout")) {
+                MasterRow(name: "Forms",
+                          destination: UnimplementedView(name: "Forms"))
+                MasterRow(name: "GeometryView",
+                          destination: UnimplementedView(name: "GeometryView"))
+                MasterRow(name: "HStack",
+                          destination: UnimplementedView(name: "HStack"))
+                MasterRow(name: "ScrollView (Horizontal)",
+                          destination: UnimplementedView(name: "ScrollView (Horizontal)"))
+                MasterRow(name: "ScrollView (Vertical)",
+                          destination: UnimplementedView(name: "ScrollView (Vertical)"))
+                MasterRow(name: "VStack",
+                          destination: UnimplementedView(name: "VStack"))
+                MasterRow(name: "ZStack",
+                          destination: UnimplementedView(name: "ZStack"))
+            }
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
+    }
+}
+
+struct MasterRow<Destination>: View where Destination: View {
+    var name: String
+    var destination: Destination
+
+    var body: some View {
+        NavigationLink(destination: destination) {
+            Text(name)
         }
     }
 }
 
-struct DetailView: View {
-    var selectedDate: Date?
-
+struct HomeView: View {
     var body: some View {
-        Group {
-            if selectedDate != nil {
-                Text("\(selectedDate!, formatter: dateFormatter)")
-            } else {
-                Text("Detail view content goes here")
-            }
-        }.navigationBarTitle(Text("Detail"))
+        VStack {
+            Text("Select an item from the menu on the left.")
+            Text("If the menu on the left is not visible, rotate the devices to landscape orientation.")
+        }
     }
 }
 
+/// Dummy view that stands in for a view listed in the menu but not implemented.
+struct UnimplementedView: View {
+    var name: String
+
+    var body: some View {
+        Text("“\(name)” is not implemented")
+            .navigationBarTitle(Text(name), displayMode: .inline)
+    }
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
