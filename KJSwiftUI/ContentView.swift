@@ -37,7 +37,7 @@ fileprivate struct MasterView: View {
                 MasterRow(name: "Toggles",
                           destination: UnimplementedView(name: "Toggles"))
                 MasterRow(name: "Text",
-                          destination: UnimplementedView(name: "Text"))
+                          destination: TextsView())
                 MasterRow(name: "TextFields",
                           destination: UnimplementedView(name: "TextFields"))
             }

@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-fileprivate var numbers = [
+fileprivate let numbers = [
     "Zero",
     "One",
     "Two",
