@@ -37,18 +37,16 @@ struct ZStacksView: View {
 /// Displays the "A" and suit symbol in the upper-left of the card.
 fileprivate struct CornerSymbol: View {
     var body: some View {
-        VStack {
-            HStack {
-                VStack {
-                    Text("A")
-                        .fontWeight(.bold)
-                        .font(Font.custom("Helvetica", size: 32))
-                    Text(heart)
-                        .font(Font.custom("Helvetica", size: 20))
-                    Spacer()
-                }
+        HStack {
+            VStack {
+                Text("A")
+                    .fontWeight(.bold)
+                    .font(Font.custom("Helvetica", size: 32))
+                Text(heart)
+                    .font(Font.custom("Helvetica", size: 20))
                 Spacer()
             }
+            Spacer()
         }
         .foregroundColor(.red)
         .padding()
