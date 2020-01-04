@@ -16,7 +16,7 @@ struct ZStacksView: View {
             // Background
             RoundedRectangle(cornerRadius: 12)
                 .foregroundColor(.white)
-                .shadow(radius: 6)
+                .shadow(radius: 16)
 
             // Center heart
             Text(heart)
