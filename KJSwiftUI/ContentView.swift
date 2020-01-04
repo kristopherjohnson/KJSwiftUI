@@ -20,18 +20,16 @@ struct ContentView: View {
 }
 
 /// Main view for the application
-struct MasterView: View {
+fileprivate struct MasterView: View {
     var body: some View {
         List {
             Section(header: Text("Controls")) {
                 MasterRow(name: "Buttons",
-                          destination: ButtonsView()
-                            .navigationBarTitle(Text("Buttons"), displayMode: .inline))
+                          destination: ButtonsView())
                 MasterRow(name: "DatePickers",
                           destination: UnimplementedView(name: "DatePickers"))
                 MasterRow(name: "Pickers",
-                          destination: PickersView()
-                            .navigationBarTitle(Text("Pickers"), displayMode: .inline))
+                          destination: PickersView())
                 MasterRow(name: "Sliders",
                           destination: UnimplementedView(name: "Sliders"))
                 MasterRow(name: "Steppers",
@@ -61,49 +59,48 @@ struct MasterView: View {
                 MasterRow(name: "GeometryReader",
                           destination: UnimplementedView(name: "GeometryReader"))
                 MasterRow(name: "HStacks",
-                          destination: HStacksView()
-                            .navigationBarTitle("HStacks", displayMode: .inline))
+                          destination: HStacksView())
                 MasterRow(name: "Spacers",
                           destination: UnimplementedView(name: "Spacers"))
                 MasterRow(name: "VStacks",
-                          destination: VStacksView()
-                          .navigationBarTitle("VStacks", displayMode: .inline))
+                          destination: VStacksView())
                 MasterRow(name: "ZStacks",
-                          destination: UnimplementedView(name: "ZStacks"))
+                          destination: ZStacksView())
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
-struct MasterRow<Destination>: View where Destination: View {
+/// A row in the `MasterView` list.
+fileprivate struct MasterRow<Destination>: View where Destination: View {
     var name: String
     var destination: Destination
 
     var body: some View {
-        NavigationLink(destination: destination) {
+        NavigationLink(destination: destination.navigationBarTitle(Text(name), displayMode: .inline)) {
             Text(name)
         }
     }
 }
 
 /// Empty view that shows as iPad detail view when nothing is selected.
-struct HomeView: View {
+fileprivate struct HomeView: View {
     var body: some View {
         VStack {
             Text("Select an item from the menu on the left.")
-            Text("If the menu on the left is not visible, rotate the devices to landscape orientation.")
+            Text("If the menu on the left is not visible, rotate the device to landscape orientation.")
         }
     }
 }
 
 /// Dummy view that stands in for a view listed in the menu but not implemented.
-struct UnimplementedView: View {
+fileprivate struct UnimplementedView: View {
     var name: String
 
     var body: some View {
         Text("“\(name)” is not implemented")
-            .navigationBarTitle(Text(name), displayMode: .inline)
+            .multilineTextAlignment(.center)
     }
 }
 

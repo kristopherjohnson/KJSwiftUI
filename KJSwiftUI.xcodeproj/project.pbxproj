@@ -18,6 +18,7 @@
 		4EEDC4CA23C00A720040153F /* PickersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDC4C923C00A720040153F /* PickersView.swift */; };
 		4EEDC4CC23C0B09B0040153F /* HStacksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDC4CB23C0B09B0040153F /* HStacksView.swift */; };
 		4EEDC4CE23C0B1810040153F /* VStacksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDC4CD23C0B1810040153F /* VStacksView.swift */; };
+		4EEDC4D023C0B5840040153F /* ZStacksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDC4CF23C0B5840040153F /* ZStacksView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		4EEDC4C923C00A720040153F /* PickersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickersView.swift; sourceTree = "<group>"; };
 		4EEDC4CB23C0B09B0040153F /* HStacksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStacksView.swift; sourceTree = "<group>"; };
 		4EEDC4CD23C0B1810040153F /* VStacksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStacksView.swift; sourceTree = "<group>"; };
+		4EEDC4CF23C0B5840040153F /* ZStacksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStacksView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				4EEDC48D23BF65B20040153F /* Preview Content */,
 				4EEDC48723BF65B00040153F /* SceneDelegate.swift */,
 				4EEDC4CD23C0B1810040153F /* VStacksView.swift */,
+				4EEDC4CF23C0B5840040153F /* ZStacksView.swift */,
 			);
 			path = KJSwiftUI;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			files = (
 				4EEDC4CE23C0B1810040153F /* VStacksView.swift in Sources */,
 				4EEDC4CC23C0B09B0040153F /* HStacksView.swift in Sources */,
+				4EEDC4D023C0B5840040153F /* ZStacksView.swift in Sources */,
 				4EEDC48623BF65B00040153F /* AppDelegate.swift in Sources */,
 				4EEDC48823BF65B00040153F /* SceneDelegate.swift in Sources */,
 				4EEDC4A823BF69330040153F /* ButtonsView.swift in Sources */,
