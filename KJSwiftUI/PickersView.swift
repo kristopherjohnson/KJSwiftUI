@@ -35,19 +35,16 @@ struct PickersView: View {
 
     var body: some View {
         VStack {
-            Picker(selection: $numberChoice, label: Text("Digit")) {
-                Text("Zero").tag(0)
+            Picker(selection: $numberChoice, label: Text("Number")) {
                 Text("One").tag(1)
                 Text("Two").tag(2)
                 Text("Three").tag(3)
                 Text("Four").tag(4)
                 Text("Five").tag(5)
-                Text("Six").tag(6)
-                Text("Seven").tag(7)
-                Text("Eight").tag(8)
-                Text("Nine").tag(9)
             }
-            .foregroundColor(Color.primary)
+            .pickerStyle(SegmentedPickerStyle())
+            .labelsHidden()
+            .padding()
 
             HStack {
                 Text("Selected number: ")
@@ -61,6 +58,7 @@ struct PickersView: View {
                         .foregroundColor(pickerColor.color)
                 }
             }
+            .labelsHidden()
 
             HStack {
                 Text("Selected color: ")
