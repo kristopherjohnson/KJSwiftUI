@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4EE8B0C823C118A700256266 /* TextsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE8B0C723C118A700256266 /* TextsView.swift */; };
+		4EE8B0CA23C1430200256266 /* FontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE8B0C923C1430200256266 /* FontsView.swift */; };
 		4EEDC48623BF65B00040153F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDC48523BF65B00040153F /* AppDelegate.swift */; };
 		4EEDC48823BF65B00040153F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDC48723BF65B00040153F /* SceneDelegate.swift */; };
 		4EEDC48A23BF65B00040153F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDC48923BF65B00040153F /* ContentView.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		4EE8B0C723C118A700256266 /* TextsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextsView.swift; sourceTree = "<group>"; };
+		4EE8B0C923C1430200256266 /* FontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsView.swift; sourceTree = "<group>"; };
 		4EEDC48223BF65B00040153F /* KJSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KJSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EEDC48523BF65B00040153F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EEDC48723BF65B00040153F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				4EE8B0C723C118A700256266 /* TextsView.swift */,
 				4EEDC4CD23C0B1810040153F /* VStacksView.swift */,
 				4EEDC4CF23C0B5840040153F /* ZStacksView.swift */,
+				4EE8B0C923C1430200256266 /* FontsView.swift */,
 			);
 			path = KJSwiftUI;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				4EEDC4CC23C0B09B0040153F /* HStacksView.swift in Sources */,
 				4EEDC4D023C0B5840040153F /* ZStacksView.swift in Sources */,
 				4EEDC48623BF65B00040153F /* AppDelegate.swift in Sources */,
+				4EE8B0CA23C1430200256266 /* FontsView.swift in Sources */,
 				4EEDC48823BF65B00040153F /* SceneDelegate.swift in Sources */,
 				4EEDC4A823BF69330040153F /* ButtonsView.swift in Sources */,
 				4EEDC4CA23C00A720040153F /* PickersView.swift in Sources */,

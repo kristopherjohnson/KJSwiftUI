@@ -16,14 +16,13 @@ struct TextsView: View {
             VStack(spacing: 8) {
                 Group {
                     Text(loremIpsum)
-                        .allowsTightening(true)
-                        .font(Font.custom("GillSans", size: 11))
+                        .font(Font.custom("GillSans", size: 13))
                         .lineSpacing(2)
                         .padding([.horizontal, .top])
 
                     // Right-justified
                     Text(loremIpsum)
-                        .font(Font.custom("Futura", size: 11))
+                        .font(Font.custom("Futura", size: 13))
                         .multilineTextAlignment(.trailing)
                         .padding(.horizontal)
 
@@ -35,9 +34,9 @@ struct TextsView: View {
                         .padding(.horizontal)
                 }
 
-                Divider()
-
                 Group {
+                    Divider()
+
                     // Combined with `+` for single line
                     Text("Bold").bold() +
                         Text(" ") +
@@ -54,9 +53,9 @@ struct TextsView: View {
                         + Text(" on line.")
                 }.multilineTextAlignment(.center)
 
-                Divider()
-
                 Group {
+                    Divider()
+
                     Text("Font.body").font(.body)
                     Text("Font.callout").font(.callout)
                     Text("Font.caption").font(.caption)
@@ -67,9 +66,9 @@ struct TextsView: View {
                     Text("Font.title").font(.title)
                 }
 
-                Divider()
-
                 Group {
+                    Divider()
+
                     Text("Font.Weight.ultraLight").fontWeight(.ultraLight)
                     Text("Font.Weight.thin").fontWeight(.thin)
                     Text("Font.Weight.light").fontWeight(.light)
@@ -81,9 +80,9 @@ struct TextsView: View {
                     Text("Font.Weight.black").fontWeight(.black)
                 }
 
-                Divider()
-
                 Group {
+                    Divider()
+
                     Text("Font.Design.default")
                         .font(Font.system(size: 17, design: .default))
                     Text("Font.Design.monospaced")
@@ -94,7 +93,6 @@ struct TextsView: View {
                         .font(Font.system(size: 17, design: .serif))
                 }
 
-                // TODO: List all available fonts
             }
         }
     }

@@ -67,6 +67,11 @@ fileprivate struct MasterView: View {
                 MasterRow(name: "ZStacks",
                           destination: ZStacksView())
             }
+
+            Section(header: Text("Miscellaneous")) {
+                MasterRow(name: "Fonts",
+                          destination: FontsView())
+            }
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
