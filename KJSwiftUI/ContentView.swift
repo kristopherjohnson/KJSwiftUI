@@ -61,7 +61,7 @@ fileprivate struct MasterView: View {
                 MasterRow(name: "HStacks",
                           destination: HStacksView())
                 MasterRow(name: "Spacers",
-                          destination: UnimplementedView(name: "Spacers"))
+                          destination: SpacersView())
                 MasterRow(name: "VStacks",
                           destination: VStacksView())
                 MasterRow(name: "ZStacks",
