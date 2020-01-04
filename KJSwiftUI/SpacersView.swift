@@ -42,7 +42,7 @@ struct SpacersView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             SpacersView()
-                .navigationBarTitle(Text("SpacersView"), displayMode: .inline)
+                .navigationBarTitle("SpacersView", displayMode: .inline)
         }
     }
 }
