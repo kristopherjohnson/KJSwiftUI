@@ -97,7 +97,6 @@ struct TextsView: View {
                 // TODO: List all available fonts
             }
         }
-        .edgesIgnoringSafeArea(.bottom)
     }
 }
 
