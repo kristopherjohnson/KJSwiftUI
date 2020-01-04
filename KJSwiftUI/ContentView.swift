@@ -60,14 +60,16 @@ struct MasterView: View {
                           destination: UnimplementedView(name: "Form"))
                 MasterRow(name: "GeometryReader",
                           destination: UnimplementedView(name: "GeometryReader"))
-                MasterRow(name: "HStack",
-                          destination: UnimplementedView(name: "HStack"))
+                MasterRow(name: "HStacks",
+                          destination: HStacksView()
+                            .navigationBarTitle("HStacks", displayMode: .inline))
                 MasterRow(name: "Spacers",
                           destination: UnimplementedView(name: "Spacers"))
-                MasterRow(name: "VStack",
-                          destination: UnimplementedView(name: "VStack"))
-                MasterRow(name: "ZStack",
-                          destination: UnimplementedView(name: "ZStack"))
+                MasterRow(name: "VStacks",
+                          destination: VStacksView()
+                          .navigationBarTitle("VStacks", displayMode: .inline))
+                MasterRow(name: "ZStacks",
+                          destination: UnimplementedView(name: "ZStacks"))
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())

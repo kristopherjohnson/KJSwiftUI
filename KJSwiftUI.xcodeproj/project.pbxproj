@@ -16,6 +16,8 @@
 		4EEDC49D23BF65B20040153F /* KJSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDC49C23BF65B20040153F /* KJSwiftUIUITests.swift */; };
 		4EEDC4A823BF69330040153F /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDC4A723BF69330040153F /* ButtonsView.swift */; };
 		4EEDC4CA23C00A720040153F /* PickersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDC4C923C00A720040153F /* PickersView.swift */; };
+		4EEDC4CC23C0B09B0040153F /* HStacksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDC4CB23C0B09B0040153F /* HStacksView.swift */; };
+		4EEDC4CE23C0B1810040153F /* VStacksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDC4CD23C0B1810040153F /* VStacksView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		4EEDC49E23BF65B20040153F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EEDC4A723BF69330040153F /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
 		4EEDC4C923C00A720040153F /* PickersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickersView.swift; sourceTree = "<group>"; };
+		4EEDC4CB23C0B09B0040153F /* HStacksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStacksView.swift; sourceTree = "<group>"; };
+		4EEDC4CD23C0B1810040153F /* VStacksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStacksView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,11 +91,13 @@
 				4EEDC48B23BF65B20040153F /* Assets.xcassets */,
 				4EEDC4A723BF69330040153F /* ButtonsView.swift */,
 				4EEDC48923BF65B00040153F /* ContentView.swift */,
+				4EEDC4CB23C0B09B0040153F /* HStacksView.swift */,
 				4EEDC49323BF65B20040153F /* Info.plist */,
 				4EEDC49023BF65B20040153F /* LaunchScreen.storyboard */,
 				4EEDC4C923C00A720040153F /* PickersView.swift */,
 				4EEDC48D23BF65B20040153F /* Preview Content */,
 				4EEDC48723BF65B00040153F /* SceneDelegate.swift */,
+				4EEDC4CD23C0B1810040153F /* VStacksView.swift */,
 			);
 			path = KJSwiftUI;
 			sourceTree = "<group>";
@@ -214,6 +220,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EEDC4CE23C0B1810040153F /* VStacksView.swift in Sources */,
+				4EEDC4CC23C0B09B0040153F /* HStacksView.swift in Sources */,
 				4EEDC48623BF65B00040153F /* AppDelegate.swift in Sources */,
 				4EEDC48823BF65B00040153F /* SceneDelegate.swift in Sources */,
 				4EEDC4A823BF69330040153F /* ButtonsView.swift in Sources */,
