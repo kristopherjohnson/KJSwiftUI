@@ -27,12 +27,17 @@ struct ButtonsView: View {
 
             Button(action: {}) {
                 Text("Fancy Button")
-                    .font(Font.custom("SnellRoundhand-Bold", size: 20))
+                    .font(Font.custom("SnellRoundhand-Bold", size: 22))
             }
 
             Button(action: {}) {
                 Text("Title Button")
                     .font(.title)
+            }
+
+            Button(action: {}) {
+                Image(systemName: "magnifyingglass")
+                Text("Search")
             }
 
             Button(action: {}) {
@@ -48,6 +53,17 @@ struct ButtonsView: View {
                     .foregroundColor(.white)
                     .cornerRadius(8)
             }
+
+            HStack {
+                Button(action: {}) {
+                    Image(systemName: "minus.circle")
+                }
+                .padding(.trailing, 8)
+                Button(action: {}) {
+                    Image(systemName: "plus.circle")
+                }
+            }
+            .padding()
         }
     }
 }

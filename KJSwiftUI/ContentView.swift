@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             MasterView()
-                .navigationBarTitle(Text("KJSwiftUI"), displayMode: .inline)
+                .navigationBarTitle(Text("KJSwiftUI"))
             HomeView()
                 .navigationBarTitle(Text("Home"))
         }
@@ -27,27 +27,43 @@ struct MasterView: View {
                 MasterRow(name: "Buttons",
                           destination: ButtonsView()
                             .navigationBarTitle(Text("Buttons"), displayMode: .inline))
+                MasterRow(name: "DatePickers",
+                          destination: UnimplementedView(name: "DatePickers"))
                 MasterRow(name: "Pickers",
-                          destination: UnimplementedView(name: "Pickers"))
+                          destination: PickersView()
+                            .navigationBarTitle(Text("Pickers"), displayMode: .inline))
                 MasterRow(name: "Sliders",
                           destination: UnimplementedView(name: "Sliders"))
+                MasterRow(name: "Steppers",
+                          destination: UnimplementedView(name: "Steppers"))
+                MasterRow(name: "Toggles",
+                          destination: UnimplementedView(name: "Toggles"))
                 MasterRow(name: "Text",
                           destination: UnimplementedView(name: "Text"))
                 MasterRow(name: "TextFields",
                           destination: UnimplementedView(name: "TextFields"))
             }
 
-            Section(header: Text("Layout")) {
-                MasterRow(name: "Forms",
-                          destination: UnimplementedView(name: "Forms"))
-                MasterRow(name: "GeometryView",
-                          destination: UnimplementedView(name: "GeometryView"))
-                MasterRow(name: "HStack",
-                          destination: UnimplementedView(name: "HStack"))
+            Section(header: Text("Containers")) {
+                MasterRow(name: "List",
+                          destination: UnimplementedView(name: "List"))
                 MasterRow(name: "ScrollView (Horizontal)",
                           destination: UnimplementedView(name: "ScrollView (Horizontal)"))
                 MasterRow(name: "ScrollView (Vertical)",
                           destination: UnimplementedView(name: "ScrollView (Vertical)"))
+                MasterRow(name: "TabView",
+                          destination: UnimplementedView(name: "TabView"))
+            }
+
+            Section(header: Text("Layout")) {
+                MasterRow(name: "Form",
+                          destination: UnimplementedView(name: "Form"))
+                MasterRow(name: "GeometryReader",
+                          destination: UnimplementedView(name: "GeometryReader"))
+                MasterRow(name: "HStack",
+                          destination: UnimplementedView(name: "HStack"))
+                MasterRow(name: "Spacers",
+                          destination: UnimplementedView(name: "Spacers"))
                 MasterRow(name: "VStack",
                           destination: UnimplementedView(name: "VStack"))
                 MasterRow(name: "ZStack",
@@ -69,6 +85,7 @@ struct MasterRow<Destination>: View where Destination: View {
     }
 }
 
+/// Empty view that shows as iPad detail view when nothing is selected.
 struct HomeView: View {
     var body: some View {
         VStack {
