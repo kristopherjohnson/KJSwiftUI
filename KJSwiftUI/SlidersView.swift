@@ -21,25 +21,30 @@ struct SlidersView: View {
 
     var body: some View {
         VStack {
-            Slider(value: $slider1Value, in: 0.0...100.0)
-            HStack {
-                Text("0")
-                Spacer()
-                Text("100")
+            VStack {
+                Slider(value: $slider1Value, in: 0.0...100.0)
+                HStack {
+                    Text("0")
+                    Spacer()
+                    Text("100")
+                }
+
+                Text("Slider 1 Value: ")
+                        + Text(formattedSlider1Value)
             }
+            .padding(.bottom, 40)
 
-            Text("Slider 1 Value: ")
-                    + Text(formattedSlider1Value)
+            VStack {
+                Slider(value: $slider2Value, in: 0.0...1.0)
+                 HStack {
+                     Text("0.0")
+                     Spacer()
+                     Text("1.0")
+                 }
 
-            Slider(value: $slider2Value, in: 0.0...1.0)
-            HStack {
-                Text("0.0")
-                Spacer()
-                Text("1.0")
+                Text("Slider 2 Value: ")
+                     + Text(formattedSlider2Value)
             }
-
-           Text("Slider 2 Value: ")
-                + Text(formattedSlider2Value)
         }
         .frame(width: 300)
     }
