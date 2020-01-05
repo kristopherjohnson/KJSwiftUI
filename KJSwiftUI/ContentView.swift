@@ -31,7 +31,7 @@ fileprivate struct MasterView: View {
                 MasterRow(name: "Pickers",
                           destination: PickersView())
                 MasterRow(name: "Sliders",
-                          destination: UnimplementedView(name: "Sliders"))
+                          destination: SlidersView())
                 MasterRow(name: "Steppers",
                           destination: UnimplementedView(name: "Steppers"))
                 MasterRow(name: "Toggles",
@@ -43,6 +43,8 @@ fileprivate struct MasterView: View {
             }
 
             Section(header: Text("Containers")) {
+                MasterRow(name: "Form",
+                          destination: UnimplementedView(name: "Form"))
                 MasterRow(name: "List",
                           destination: UnimplementedView(name: "List"))
                 MasterRow(name: "ScrollView (Horizontal)",
@@ -54,8 +56,8 @@ fileprivate struct MasterView: View {
             }
 
             Section(header: Text("Layout")) {
-                MasterRow(name: "Form",
-                          destination: UnimplementedView(name: "Form"))
+                MasterRow(name: "Alignment Guides",
+                          destination: UnimplementedView(name: "Alignment Guides"))
                 MasterRow(name: "GeometryReader",
                           destination: UnimplementedView(name: "GeometryReader"))
                 MasterRow(name: "HStacks",
