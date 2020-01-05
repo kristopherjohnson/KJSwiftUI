@@ -2,7 +2,6 @@
 //  ScrollViewVertical.swift
 //  KJSwiftUI
 //
-//  Created by Kristopher Johnson on 1/4/20.
 //  Copyright © 2020 Kristopher Johnson. All rights reserved.
 //
 

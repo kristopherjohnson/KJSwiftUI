@@ -2,7 +2,6 @@
 //  KJSwiftUIUITests.swift
 //  KJSwiftUIUITests
 //
-//  Created by Kristopher Johnson on 1/3/20.
 //  Copyright © 2020 Kristopher Johnson. All rights reserved.
 //
 

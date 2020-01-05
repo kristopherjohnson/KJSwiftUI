@@ -39,7 +39,7 @@ fileprivate struct MasterView: View {
                 MasterRow(name: "Text",
                           destination: TextsView())
                 MasterRow(name: "TextFields",
-                          destination: UnimplementedView(name: "TextFields"))
+                          destination: TextFieldsView())
             }
 
             Section(header: Text("Containers")) {
