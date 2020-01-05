@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E84E87623C22E2B0026B20B /* TogglesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E84E87523C22E2B0026B20B /* TogglesView.swift */; };
 		4EE8B0C823C118A700256266 /* TextsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE8B0C723C118A700256266 /* TextsView.swift */; };
 		4EE8B0CA23C1430200256266 /* FontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE8B0C923C1430200256266 /* FontsView.swift */; };
 		4EE8B0CC23C15CF800256266 /* TextFieldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE8B0CB23C15CF800256266 /* TextFieldsView.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E84E87523C22E2B0026B20B /* TogglesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglesView.swift; sourceTree = "<group>"; };
 		4EE8B0C723C118A700256266 /* TextsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextsView.swift; sourceTree = "<group>"; };
 		4EE8B0C923C1430200256266 /* FontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsView.swift; sourceTree = "<group>"; };
 		4EE8B0CB23C15CF800256266 /* TextFieldsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldsView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				4EEDC4D123C0CA140040153F /* SpacersView.swift */,
 				4EE8B0CB23C15CF800256266 /* TextFieldsView.swift */,
 				4EE8B0C723C118A700256266 /* TextsView.swift */,
+				4E84E87523C22E2B0026B20B /* TogglesView.swift */,
 				4EEDC4CD23C0B1810040153F /* VStacksView.swift */,
 				4EEDC4CF23C0B5840040153F /* ZStacksView.swift */,
 			);
@@ -245,6 +248,7 @@
 				4EE8B0C823C118A700256266 /* TextsView.swift in Sources */,
 				4EEDC4D423C0FDDD0040153F /* ScrollViewVertical.swift in Sources */,
 				4EEDC4CC23C0B09B0040153F /* HStacksView.swift in Sources */,
+				4E84E87623C22E2B0026B20B /* TogglesView.swift in Sources */,
 				4EEDC4D023C0B5840040153F /* ZStacksView.swift in Sources */,
 				4EEDC48623BF65B00040153F /* AppDelegate.swift in Sources */,
 				4EE8B0CC23C15CF800256266 /* TextFieldsView.swift in Sources */,
