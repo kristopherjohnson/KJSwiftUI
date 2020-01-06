@@ -33,7 +33,7 @@ fileprivate struct MasterView: View {
                 MasterRow(name: "Sliders",
                           destination: SlidersView())
                 MasterRow(name: "Steppers",
-                          destination: UnimplementedView(name: "Steppers"))
+                          destination: SteppersView())
                 MasterRow(name: "Toggles",
                           destination: TogglesView())
                 MasterRow(name: "Text",
