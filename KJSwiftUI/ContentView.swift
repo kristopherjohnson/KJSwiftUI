@@ -27,7 +27,7 @@ fileprivate struct MasterView: View {
                 MasterRow(name: "Buttons",
                           destination: ButtonsView())
                 MasterRow(name: "DatePickers",
-                          destination: UnimplementedView(name: "DatePickers"))
+                          destination: DatePickersView())
                 MasterRow(name: "Pickers",
                           destination: PickersView())
                 MasterRow(name: "Sliders",
