@@ -44,8 +44,16 @@ fileprivate let numbers = [
 struct ScrollViewVertical: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: true) {
-            ForEach(numbers, id: \.self) { number in
-                Text(number)
+            HStack {
+                Spacer()
+
+                VStack {
+                    ForEach(numbers, id: \.self) { number in
+                        Text(number)
+                    }
+                }
+
+                Spacer()
             }
         }
         .font(Font.custom("Futura", size: 50))
