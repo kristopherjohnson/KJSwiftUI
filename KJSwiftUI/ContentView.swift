@@ -23,13 +23,15 @@ struct ContentView: View {
 fileprivate struct MasterView: View {
     var body: some View {
         List {
-            Section(header: Text("Controls")) {
+            Section(header: Text("Controls/Elements")) {
                 MasterRow(name: "Buttons",
                           destination: ButtonsView())
                 MasterRow(name: "DatePickers",
                           destination: DatePickersView())
                 MasterRow(name: "Pickers",
                           destination: PickersView())
+                MasterRow(name: "Shapes",
+                          destination: ShapesView())
                 MasterRow(name: "Sliders",
                           destination: SlidersView())
                 MasterRow(name: "Steppers",
