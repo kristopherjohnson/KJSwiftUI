@@ -47,10 +47,12 @@ struct ButtonsView: View {
                     HStack {
                         Button(action: {}) {
                             Image(systemName: "minus.circle")
+                                .imageScale(.large)
                         }
-                        .padding(.trailing, 16)
+                        .padding(.trailing, 44)
                         Button(action: {}) {
                             Image(systemName: "plus.circle")
+                                .imageScale(.large)
                         }
                     }
 

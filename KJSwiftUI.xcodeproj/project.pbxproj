@@ -125,6 +125,7 @@
 				4EEDC48723BF65B00040153F /* SceneDelegate.swift */,
 				4EEDC4D523C102E00040153F /* ScrollViewHorizontal.swift */,
 				4EEDC4D323C0FDDD0040153F /* ScrollViewVertical.swift */,
+				4E84E87D23C409620026B20B /* ShapesView.swift */,
 				4E84E87723C2A6AA0026B20B /* SlidersView.swift */,
 				4EEDC4D123C0CA140040153F /* SpacersView.swift */,
 				4E84E87923C2AE7C0026B20B /* SteppersView.swift */,
@@ -133,7 +134,6 @@
 				4E84E87523C22E2B0026B20B /* TogglesView.swift */,
 				4EEDC4CD23C0B1810040153F /* VStacksView.swift */,
 				4EEDC4CF23C0B5840040153F /* ZStacksView.swift */,
-				4E84E87D23C409620026B20B /* ShapesView.swift */,
 			);
 			path = KJSwiftUI;
 			sourceTree = "<group>";

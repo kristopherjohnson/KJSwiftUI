@@ -12,8 +12,10 @@ struct SpacersView: View {
         VStack {
             HStack {
                 Image(systemName: "a.circle")
+                    .imageScale(.large)
                 Spacer()
                 Image(systemName: "b.circle")
+                .imageScale(.large)
             }
 
             Spacer()
@@ -21,8 +23,10 @@ struct SpacersView: View {
             HStack {
                 Spacer()
                 Image(systemName: "c.circle")
+                    .imageScale(.large)
                 Spacer()
                 Image(systemName: "d.circle")
+                    .imageScale(.large)
                 Spacer()
             }
 
@@ -30,8 +34,10 @@ struct SpacersView: View {
 
             HStack {
                 Image(systemName: "e.circle")
+                    .imageScale(.large)
                 Spacer()
                 Image(systemName: "f.circle")
+                    .imageScale(.large)
             }
         }
         .padding()
