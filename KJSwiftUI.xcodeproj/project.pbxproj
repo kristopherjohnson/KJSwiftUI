@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4E43789E23CFDEFA00828D87 /* LoremIpsum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E43789D23CFDEFA00828D87 /* LoremIpsum.swift */; };
 		4E4378A023D1422000828D87 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E43789F23D1422000828D87 /* FormView.swift */; };
+		4E4378A223D1481300828D87 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4378A123D1481300828D87 /* ListView.swift */; };
 		4E84E87623C22E2B0026B20B /* TogglesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E84E87523C22E2B0026B20B /* TogglesView.swift */; };
 		4E84E87823C2A6AA0026B20B /* SlidersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E84E87723C2A6AA0026B20B /* SlidersView.swift */; };
 		4E84E87A23C2AE7C0026B20B /* SteppersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E84E87923C2AE7C0026B20B /* SteppersView.swift */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		4E43789D23CFDEFA00828D87 /* LoremIpsum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremIpsum.swift; sourceTree = "<group>"; };
 		4E43789F23D1422000828D87 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		4E4378A123D1481300828D87 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		4E84E87523C22E2B0026B20B /* TogglesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglesView.swift; sourceTree = "<group>"; };
 		4E84E87723C2A6AA0026B20B /* SlidersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidersView.swift; sourceTree = "<group>"; };
 		4E84E87923C2AE7C0026B20B /* SteppersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteppersView.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				4EEDC4CB23C0B09B0040153F /* HStacksView.swift */,
 				4EEDC49323BF65B20040153F /* Info.plist */,
 				4EEDC49023BF65B20040153F /* LaunchScreen.storyboard */,
+				4E4378A123D1481300828D87 /* ListView.swift */,
 				4E43789D23CFDEFA00828D87 /* LoremIpsum.swift */,
 				4EEDC4C923C00A720040153F /* PickersView.swift */,
 				4EEDC48D23BF65B20040153F /* Preview Content */,
@@ -270,6 +273,7 @@
 				4EEDC4CC23C0B09B0040153F /* HStacksView.swift in Sources */,
 				4E84E87623C22E2B0026B20B /* TogglesView.swift in Sources */,
 				4EEDC4D023C0B5840040153F /* ZStacksView.swift in Sources */,
+				4E4378A223D1481300828D87 /* ListView.swift in Sources */,
 				4EEDC48623BF65B00040153F /* AppDelegate.swift in Sources */,
 				4E4378A023D1422000828D87 /* FormView.swift in Sources */,
 				4EE8B0CC23C15CF800256266 /* TextFieldsView.swift in Sources */,
