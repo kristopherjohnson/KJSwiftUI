@@ -54,7 +54,7 @@ fileprivate struct MasterView: View {
                 MasterRow(name: "ScrollView (Vertical)",
                           destination: ScrollViewVertical())
                 MasterRow(name: "TabView",
-                          destination: UnimplementedView(name: "TabView"))
+                          destination: TabsView())
             }
 
             Section(header: Text("Layout")) {
