@@ -46,7 +46,7 @@ fileprivate struct MasterView: View {
 
             Section(header: Text("Containers")) {
                 MasterRow(name: "Form",
-                          destination: UnimplementedView(name: "Form"))
+                          destination: FormView())
                 MasterRow(name: "List",
                           destination: UnimplementedView(name: "List"))
                 MasterRow(name: "ScrollView (Horizontal)",
