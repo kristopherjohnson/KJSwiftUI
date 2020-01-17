@@ -2,7 +2,6 @@
 //  ListView.swift
 //  KJSwiftUI
 //
-//  Created by Kristopher Johnson on 1/16/20.
 //  Copyright © 2020 Kristopher Johnson. All rights reserved.
 //
 
@@ -30,7 +29,7 @@ struct ListView: View {
                     Text(item)
                 }
             }
-            
+
             Section(header: Text("Alphabet")) {
                 ForEach(alphabetItems, id: \.self) { item in
                     Text(item)
