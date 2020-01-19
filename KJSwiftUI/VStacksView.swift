@@ -9,13 +9,51 @@ import SwiftUI
 
 struct VStacksView: View {
     var body: some View {
-        VStack(spacing: 16) {
-            Image(systemName: "a.circle")
-            Image(systemName: "b.circle")
-            Image(systemName: "c.circle")
-            Image(systemName: "d.circle")
-            Image(systemName: "e.circle")
-            Text("Text")
+        ScrollView {
+            Text("HorizontalAlignment.leading")
+                .font(.caption)
+                .padding(.top)
+            VStack(alignment: .leading) {
+                Rectangle()
+                    .frame(width: 100, height: 20)
+                Rectangle()
+                    .frame(width: 40, height: 20)
+                Rectangle()
+                    .frame(width: 60, height: 20)
+                Rectangle()
+                    .frame(width: 85, height: 20)
+            }
+            .foregroundColor(.blue)
+
+            Text("HorizontalAlignment.center")
+                .font(.caption)
+                .padding(.top)
+            VStack(alignment: .center) {
+                Rectangle()
+                    .frame(width: 100, height: 20)
+                Rectangle()
+                    .frame(width: 40, height: 20)
+                Rectangle()
+                    .frame(width: 60, height: 20)
+                Rectangle()
+                    .frame(width: 85, height: 20)
+            }
+            .foregroundColor(.orange)
+
+            Text("HorizontalAlignment.trailing")
+                .font(.caption)
+                .padding(.top)
+            VStack(alignment: .trailing) {
+                Rectangle()
+                    .frame(width: 100, height: 20)
+                Rectangle()
+                    .frame(width: 40, height: 20)
+                Rectangle()
+                    .frame(width: 60, height: 20)
+                Rectangle()
+                    .frame(width: 85, height: 20)
+            }
+            .foregroundColor(.green)
         }
     }
 }
