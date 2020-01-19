@@ -15,7 +15,6 @@ struct ContentView: View {
             HomeView()
                 .navigationBarTitle(Text("Home"))
         }
-        //.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
@@ -59,7 +58,7 @@ fileprivate struct MasterView: View {
 
             Section(header: Text("Layout")) {
                 MasterRow(name: "Alignment Guides",
-                          destination: UnimplementedView(name: "Alignment Guides"))
+                          destination: AlignmentGuidesView())
                 MasterRow(name: "GeometryReader",
                           destination: UnimplementedView(name: "GeometryReader"))
                 MasterRow(name: "HStacks",
