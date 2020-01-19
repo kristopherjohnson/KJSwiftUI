@@ -72,6 +72,10 @@ fileprivate struct MasterView: View {
             }
 
             Section(header: Text("Miscellaneous")) {
+                MasterRow(name: "Animations",
+                          destination: UnimplementedView(name: "Animations"))
+                MasterRow(name: "Data Bindings",
+                          destination: UnimplementedView(name: "Data Bindings"))
                 MasterRow(name: "Fonts",
                           destination: FontsView())
             }
