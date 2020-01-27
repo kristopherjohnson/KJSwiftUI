@@ -60,7 +60,7 @@ fileprivate struct MasterView: View {
                 MasterRow(name: "Alignment Guides",
                           destination: AlignmentGuidesView())
                 MasterRow(name: "GeometryReader",
-                          destination: UnimplementedView(name: "GeometryReader"))
+                          destination: GeometryReaderView())
                 MasterRow(name: "HStacks",
                           destination: HStacksView())
                 MasterRow(name: "Spacers",

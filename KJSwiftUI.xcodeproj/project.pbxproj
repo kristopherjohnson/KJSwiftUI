@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E06B9A623DE5A9A00D32051 /* GeometryReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E06B9A523DE5A9A00D32051 /* GeometryReaderView.swift */; };
 		4E1A3AFF23D4867900DCA9F1 /* AlignmentGuidesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1A3AFE23D4867900DCA9F1 /* AlignmentGuidesView.swift */; };
 		4E43789E23CFDEFA00828D87 /* LoremIpsum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E43789D23CFDEFA00828D87 /* LoremIpsum.swift */; };
 		4E4378A023D1422000828D87 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E43789F23D1422000828D87 /* FormView.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E06B9A523DE5A9A00D32051 /* GeometryReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderView.swift; sourceTree = "<group>"; };
 		4E1A3AFE23D4867900DCA9F1 /* AlignmentGuidesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentGuidesView.swift; sourceTree = "<group>"; };
 		4E43789D23CFDEFA00828D87 /* LoremIpsum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremIpsum.swift; sourceTree = "<group>"; };
 		4E43789F23D1422000828D87 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				4E84E87B23C2C2640026B20B /* DatePickersView.swift */,
 				4EE8B0C923C1430200256266 /* FontsView.swift */,
 				4E43789F23D1422000828D87 /* FormView.swift */,
+				4E06B9A523DE5A9A00D32051 /* GeometryReaderView.swift */,
 				4EEDC4CB23C0B09B0040153F /* HStacksView.swift */,
 				4EEDC49323BF65B20040153F /* Info.plist */,
 				4EEDC49023BF65B20040153F /* LaunchScreen.storyboard */,
@@ -289,6 +292,7 @@
 				4E1A3AFF23D4867900DCA9F1 /* AlignmentGuidesView.swift in Sources */,
 				4E84E87C23C2C2640026B20B /* DatePickersView.swift in Sources */,
 				4EEDC48823BF65B00040153F /* SceneDelegate.swift in Sources */,
+				4E06B9A623DE5A9A00D32051 /* GeometryReaderView.swift in Sources */,
 				4EEDC4A823BF69330040153F /* ButtonsView.swift in Sources */,
 				4EEDC4CA23C00A720040153F /* PickersView.swift in Sources */,
 				4EEDC4D223C0CA140040153F /* SpacersView.swift in Sources */,
