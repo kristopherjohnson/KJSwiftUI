@@ -21,6 +21,7 @@ struct DatePickersView: View {
         VStack {
             DatePicker("Date", selection: $date)
                 .labelsHidden()
+                .datePickerStyle(WheelDatePickerStyle())
             
             Text("Selected: ") + Text(formattedDate)
         }
